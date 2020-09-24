@@ -119,9 +119,8 @@ header .container .col-md-7 p {
   font-size: 1.5rem;
   padding-bottom: 2rem;
 }
-.apiCallDemo .cards .card {
-  width: 22rem;
-  margin: 1rem;
+.apiCallDemo iframe {
+  padding-top: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
