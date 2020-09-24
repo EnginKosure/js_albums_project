@@ -1,0 +1,36 @@
+.btn-custom {
+  font-weight: bold;
+  border-radius: 2rem;
+}
+
+.title {
+  background: rgba(208, 241, 241, 0.199);
+  padding: 1rem 0.5rem;
+  /* font-size: 4rem; */
+}
+
+.subtext {
+  background: rgba(208, 241, 241, 0.199);
+  padding: 2em 1rem 1rem;
+  border-top-right-radius: 170px;
+  border-top-left-radius: 170px;
+}
+
+.apiCallDemo {
+  h1 {
+    padding-top: 6rem;
+    padding-bottom: 0.1rem;
+    font-family: var(--Lobster);
+  }
+  p {
+    color: var(--light-black);
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+  }
+  .cards {
+    .card {
+      width: 22rem;
+      margin: 1rem;
+    }
+  }
+}

@@ -4,7 +4,6 @@
   padding: 0;
   margin: 0;
 }
-
 :root {
   --Sniglet-font: "Sniglet", cursive;
   --Rubik: "Rubik", cursive;
@@ -41,22 +40,17 @@ header a {
   font-size: 0.9em;
   color: whitesmoke;
 }
-header .nav-item {
-  padding: 0.9em;
-}
+
 header .nav-item:last-child {
   padding-right: 10em;
 }
-header .nav-item .nav-link.active {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 23px;
-  color: #ef3b53 !important;
+header .nav-item {
+  padding: 0.9em;
 }
 header .navbar-brand {
   padding-left: 8rem;
 }
-header .sticky {
+.sticky {
   position: fixed;
   top: 0;
   width: 100%;
@@ -64,15 +58,13 @@ header .sticky {
   z-index: 9999;
   transition: all 1.5s ease;
 }
-header .row .col-md-5 {
-  padding: 0.2rem;
+.nav-item .nav-link.active {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ef3b53 !important;
 }
-header .row .col-md-5 img {
-  margin-top: 10%;
-  width: 80%;
-  transform: rotate(-20deg);
-  border-radius: 10px;
-}
+
 header .row .col-md-7 {
   padding: 5rem 0.2rem;
   font-family: "Rubik", sans-serif;
@@ -82,13 +74,26 @@ header .container .col-md-7 h6 {
   padding: 0.2rem;
   letter-spacing: 4px;
 }
+
 header .container .col-md-7 h1 {
   font-size: 4rem;
   font-weight: bold;
   padding: 0.2rem;
 }
+
 header .container .col-md-7 p {
   padding: 0.2rem;
+}
+
+header .row .col-md-5 {
+  padding: 0.2rem;
+}
+
+header .row .col-md-5 img {
+  width: 100%;
+}
+
+.sandbox-img {
 }
 
 .btn-custom {
@@ -108,20 +113,3 @@ header .container .col-md-7 p {
   border-top-right-radius: 170px;
   border-top-left-radius: 170px;
 }
-
-.apiCallDemo h1 {
-  padding-top: 6rem;
-  padding-bottom: 0.1rem;
-  font-family: var(--Lobster);
-}
-.apiCallDemo p {
-  color: var(--light-black);
-  font-size: 1.5rem;
-  padding-bottom: 2rem;
-}
-.apiCallDemo .cards .card {
-  width: 22rem;
-  margin: 1rem;
-}
-
-/*# sourceMappingURL=style.css.map */
