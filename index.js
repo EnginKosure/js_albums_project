@@ -49,6 +49,7 @@ function getAlbums(e){
 
 function checkPrevious(id){
     if(div.innerHTML!=='' && typeof lastActiveBtn !== 'undefined' && lastActiveBtn!==id){
+        div.style.height='600px';
         div.innerHTML='';
         count=0;
     }
