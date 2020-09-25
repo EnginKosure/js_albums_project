@@ -18,9 +18,9 @@ This part has an embedded code editor to try the API calls. There are already tw
 
 #### Get Photos Get Albums
 
-Here, if you click to Get Photos, you will see first 9 photos fetched from the JsonPlaceholder API. If you click once more, you will get the next 9 photos.
+Here, if you click to Get Photos button, you will see first 9 photos fetched from the JsonPlaceholder API. If you click once more, you will get the next 9 photos.
 
-Later, if you click to Get Albums, you will see the first 9 albums within the same div.
+Later, if you click to Get Albums button, you will see the first 9 albums within the same div.
 
 ### TODO's
 
