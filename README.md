@@ -1,7 +1,7 @@
 # js_albums_project
 
 A project to review API calls
-You can find the published page [on this link:](https://enginkosure.github.io/js_albums_project/)
+You can find the published page [on this link.](https://enginkosure.github.io/js_albums_project/)
 
 ### Summary
 
