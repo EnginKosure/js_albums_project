@@ -1,0 +1,28 @@
+footer {
+  background: rgba(0, 0, 0, 0.815);
+  padding: 5rem;
+  margin-top: 5rem;
+  p {
+    span {
+      color: #ff512f;
+    }
+  }
+  input {
+    border: none !important;
+    &::placeholder {
+      color: white !important;
+    }
+  }
+  .input-group {
+    .input-group-text {
+      background: var(--bggradient);
+      border: none;
+    }
+  }
+  .column {
+    i {
+      color: #dd2476;
+      padding: 0.3rem;
+    }
+  }
+}

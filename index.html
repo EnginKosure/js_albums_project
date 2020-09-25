@@ -57,9 +57,6 @@
               <li class="nav-item">
                 <a class="nav-link" href="#course">COURSES</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#price">PRICE</a>
-              </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -251,50 +248,128 @@
       </div>
     </header>
 
-    <div class="apiCallDemo text-center" id="price">
-      <h1>Get whatever data you want from JsonPlaceholder API</h1>
-      <p>Posts, comments, albums, photos, todos, users...</p>
-      <a
-        id="sandbox"
-        class="btn btn-dark btn-custom px-5 py-2"
-        data-toggle="collapse"
-        href="#cardsShow"
-        aria-expanded="false"
-        aria-controls="cardsShow"
-        >API SandBox ~ Try it ~ Show/Hide</a
-      >
-      <div class="collapse multi-collapse show" id="cardsShow">
-        <iframe
-          src="https://trinket.io/embed/python3/6f04b51010"
-          width="100%"
-          height="356"
-          frameborder="0"
-          marginwidth="0"
-          marginheight="0"
-          allowfullscreen
-        ></iframe>
+    <section class="section-2 container-fluid p-0">
+      <div class="apiCallDemo text-center" id="price">
+        <h1>Get whatever data you want from JsonPlaceholder API</h1>
+        <p>Posts, comments, albums, photos, todos, users...</p>
+        <a
+          id="sandbox"
+          class="btn btn-dark btn-custom px-5 py-2"
+          data-toggle="collapse"
+          href="#cardsShow"
+          aria-expanded="false"
+          aria-controls="cardsShow"
+          >API SandBox ~ Try it ~ Show/Hide</a
+        >
+        <div class="collapse multi-collapse show" id="cardsShow">
+          <iframe
+            src="https://trinket.io/embed/python3/6f04b51010"
+            width="100%"
+            height="356"
+            frameborder="0"
+            marginwidth="0"
+            marginheight="0"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
-    </div>
 
-    <div class="container">
-      <div class="row">
-        <button
-          id="btn"
-          type="button"
-          class="mt-3 mx-auto btn btn-dark btn-custom px-5 py-2"
-        >
-          Get Photos
-        </button>
-        <button
-          id="btn1"
-          type="button"
-          class="mt-3 mx-auto btn btn-dark btn-custom px-5 py-2"
-        >
-          Get Albums
-        </button>
+      <div class="container">
+        <div class="row">
+          <button
+            id="btn"
+            type="button"
+            class="mt-3 mx-auto btn btn-dark btn-custom px-5 py-2"
+          >
+            Get Photos
+          </button>
+          <button
+            id="btn1"
+            type="button"
+            class="mt-3 mx-auto btn btn-dark btn-custom px-5 py-2"
+          >
+            Get Albums
+          </button>
+        </div>
+        <div class="row justify-content-center" id="cardDiv"></div>
       </div>
-      <div class="row justify-content-center" id="cardDiv"></div>
-    </div>
+      <div class="cover">
+        <div class="content text-center">
+          <h1>Some Features That Made JsonPlaceholder Unique</h1>
+          <p>
+            Fake Online REST API for Testing and Prototyping Serving ~350M
+            requests per month
+          </p>
+        </div>
+      </div>
+
+      <div class="container-fluid text-center">
+        <div class="numbers d-flex flex-row flex-wrap justify-content-center">
+          <div class="rect">
+            <h1>~350M</h1>
+            <p>requests per month</p>
+          </div>
+          <div class="rect">
+            <h1>5000</h1>
+            <p>Photos</p>
+          </div>
+          <div class="rect">
+            <h1>100</h1>
+            <p>Albums</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer start -->
+    <footer>
+      <div class="container-fluid p-0">
+        <div class="row">
+          <div class="col-md-5 col-sm-5">
+            <h4 class="text-light">About us</h4>
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
+              maxime ea similique illum corrupti
+            </p>
+            <p class="pt-4 text-muted">
+              Copyright ©2020 All rights reserved | by
+              <span> MYOUR OXYGEN</span>
+            </p>
+          </div>
+          <div class="col-md-5 col-sm-12">
+            <h4 class="text-light">Newsletter</h4>
+            <p class="text-muted">Stay Updated</p>
+            <form class="form-inline">
+              <div class="col pl-0">
+                <div class="input-group pr-5">
+                  <input
+                    type="text"
+                    class="form-control bg-dark text-white"
+                    id="inlineFormInputGroupUsername2"
+                    placeholder="Email"
+                  />
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="fas fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-2 col-sm-12">
+            <h4 class="text-light">Follow Us</h4>
+            <p class="text-muted">Let us be social</p>
+            <div class="column text-light">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+              <a href="#"> <i class="fab fa-twitter fa-3x"></i></a>
+              <a href="#"><i class="fab fa-youtube fa-4x"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

@@ -47,7 +47,7 @@ function getAlbums(e){
 
 function checkPrevious(id){
     if(div.innerHTML!=='' && lastActiveBtn!==id){
-        div.style.height='600px';
+        div.style.minHeight='1200px';
         div.innerHTML='';
         count=0;
     }
@@ -62,3 +62,12 @@ $(window).scroll(function () {
     navbar.removeClass("sticky");
   }
 });
+
+// let navbar=document.querySelector('.navbar');
+// window.scroll(function () {
+//     if (window.scrollTop > 10) {
+//       navbar.classList.add("sticky");
+//     } else {
+//       navbar.removeClass("sticky");
+//     }
+//   });

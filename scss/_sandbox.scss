@@ -16,6 +16,54 @@
   border-top-left-radius: 170px;
 }
 
+.section-2 {
+  .cover {
+    width: 100%;
+    height: 22rem;
+    background: url("./images/CodeSandbox_Net.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 2rem;
+    .content {
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      padding-top: 6rem;
+      h1 {
+        font-family: var(--Patua);
+        font-size: 3rem;
+        color: whitesmoke;
+      }
+      p {
+        font-family: var(--Rubik);
+        font-size: 1rem;
+        color: #e5e5e5;
+      }
+    }
+  }
+  .numbers {
+    margin-top: -6rem;
+    .rect {
+      position: relative;
+      z-index: 1;
+      background: white;
+      width: 17rem;
+      height: 12rem;
+      padding-top: 2rem;
+      margin: 1rem;
+      border-radius: 0.5rem;
+      box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+      h1 {
+        font-size: 5rem;
+        color: tomato;
+      }
+      p {
+        font-family: var(--Patua);
+      }
+    }
+  }
+}
 .apiCallDemo {
   h1 {
     padding-top: 6rem;
