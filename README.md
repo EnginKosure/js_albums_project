@@ -25,7 +25,7 @@ Here, if you click to Get Photos button, you will see first 9 photos fetched fro
 
 Later, if you click to Get Albums button, you will see the first 9 albums within the same div.
 
-### TODO's
+### TODOs
 
 - Implement the whole logic also with React and Flask or Django.
 - Another call to return the photos of selected album.
