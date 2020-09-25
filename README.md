@@ -27,6 +27,7 @@ Later, if you click to Get Albums button, you will see the first 9 albums within
 
 ### TODO's
 
-- Implement the whole logic also with React.
+- Implement the whole logic also with React and Flask or Django.
 - Another call to return the photos of selected album.
 - Add a Helper file to show other call examples in the embedded terminal.
+- Add Tooltip for buttons that explains the functionality.
