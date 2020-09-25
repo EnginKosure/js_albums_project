@@ -4,7 +4,8 @@ A project to review API calls
 
 ### Summary
 
-AP2 is an API sandbox using JsonPlaceholder. This project is done with vanilla JavaScript. API calls are made through built-in Fetch API.
+AP2 is an API sandbox using JsonPlaceholder. This project is done with vanilla JavaScript. For CSS, Bootstrap Library and SASS preprocessor used.
+API calls are made through built-in Fetch API.
 
 ### Getting Started
 
@@ -15,6 +16,7 @@ The main part is _API Sandbox_ part and _Get Photos Get Albums_ section.
 #### API Sandbox
 
 This part has an embedded code editor to try the API calls. There are already two calls made. If you run it, you can see the result on the right section.
+You can show and hide this section by means of clicking on **API SandBox ~ Try it ~ Show/Hide** button.
 
 #### Get Photos Get Albums
 
