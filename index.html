@@ -15,6 +15,11 @@
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
+    <link
+      rel="shortcut icon"
+      href="images/ms-icon-310x310.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>AP2</title>
   </head>
@@ -24,7 +29,9 @@
       <div class="container-fluid p-0">
         <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand" href="#">
-            <i class="fas fa-book-reader fa-2x mx-3"></i>Books</a
+            <!-- <i class="fas fa-book-reader fa-2x mx-3"></i> -->
+            <i class="fab fa-quinscape fa-2x mx-3"></i>
+            DevCapital</a
           >
           <button
             class="navbar-toggler"
@@ -48,7 +55,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#course">COURSE</a>
+                <a class="nav-link" href="#course">COURSES</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#price">PRICE</a>
@@ -220,15 +227,18 @@
       <div class="container text-center" id="home">
         <div class="row">
           <div class="col-md-7 col-sm-12 text-white">
-            <h6>AUTHOR:CLARUSWAY</h6>
+            <h6>AUTHOR: MYOUR OXYGEN</h6>
             <h1>EXCITING ADVENTURE</h1>
             <p class="text-muted">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-              accusamus eum dignissimos ipsa sequi expedita.
+              JSONPlaceholder is a free online REST API that you can use
+              whenever you need some fake data. It's great for tutorials,
+              testing new libraries, sharing code examples, ...
             </p>
-            <button class="btn btn-light px-5 py-2 btn-custom">
-              By now for $5.99
-            </button>
+            <a href="#sandbox">
+              <button class="btn btn-light px-5 py-2 btn-custom">
+                Try it here, in our sandbox below! <span> ↘️</span>
+              </button>
+            </a>
           </div>
           <div class="col-md-5 col-sm-12 h-25">
             <img
@@ -245,6 +255,7 @@
       <h1>Get whatever data you want from JsonPlaceholder API</h1>
       <p>Posts, comments, albums, photos, todos, users...</p>
       <a
+        id="sandbox"
         class="btn btn-dark btn-custom px-5 py-2"
         data-toggle="collapse"
         href="#cardsShow"
