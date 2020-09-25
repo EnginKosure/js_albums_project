@@ -155,18 +155,17 @@ header .container .col-md-7 p {
 .section-2 .numbers .rect p {
   font-family: var(--Patua);
 }
-
-.apiCallDemo h1 {
+.section-2 .apiCallDemo h1 {
   padding-top: 6rem;
   padding-bottom: 0.1rem;
   font-family: var(--Lobster);
 }
-.apiCallDemo p {
+.section-2 .apiCallDemo p {
   color: var(--light-black);
   font-size: 1.5rem;
   padding-bottom: 2rem;
 }
-.apiCallDemo iframe {
+.section-2 .apiCallDemo iframe {
   padding-top: 30px;
 }
 

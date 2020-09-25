@@ -63,19 +63,19 @@
       }
     }
   }
-}
-.apiCallDemo {
-  h1 {
-    padding-top: 6rem;
-    padding-bottom: 0.1rem;
-    font-family: var(--Lobster);
-  }
-  p {
-    color: var(--light-black);
-    font-size: 1.5rem;
-    padding-bottom: 2rem;
-  }
-  iframe {
-    padding-top: 30px;
+  .apiCallDemo {
+    h1 {
+      padding-top: 6rem;
+      padding-bottom: 0.1rem;
+      font-family: var(--Lobster);
+    }
+    p {
+      color: var(--light-black);
+      font-size: 1.5rem;
+      padding-bottom: 2rem;
+    }
+    iframe {
+      padding-top: 30px;
+    }
   }
 }
