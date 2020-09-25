@@ -95,6 +95,9 @@ header .container .col-md-7 p {
   font-weight: bold;
   border-radius: 2rem;
 }
+.btn-custom:hover {
+  background-color: #aa8fd8;
+}
 
 .title {
   background: rgba(208, 241, 241, 0.199);

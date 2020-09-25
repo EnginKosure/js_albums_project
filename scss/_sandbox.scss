@@ -1,6 +1,9 @@
 .btn-custom {
   font-weight: bold;
   border-radius: 2rem;
+  &:hover {
+    background-color: #aa8fd8;
+  }
 }
 
 .title {
