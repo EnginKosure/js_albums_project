@@ -21,7 +21,6 @@ function getPhotos(e){
             `
             count+=1
         }
-
     })
     .catch(error=>console.log(error))
 }
@@ -42,22 +41,17 @@ function getAlbums(e){
             `
             count+=1
         }
-
     })
     .catch(error=>console.log(error))
 }
 
 function checkPrevious(id){
-    if(div.innerHTML!=='' && typeof lastActiveBtn !== 'undefined' && lastActiveBtn!==id){
+    if(div.innerHTML!=='' && lastActiveBtn!==id){
         div.style.height='600px';
         div.innerHTML='';
         count=0;
     }
-    if (id=='btn'){
-        lastActiveBtn = id;
-    }else{
-        lastActiveBtn = 'btn1';
-    }
+    id=='btn' ? lastActiveBtn = id : lastActiveBtn = 'btn1'
 }
 
 let navbar = $(".navbar");
