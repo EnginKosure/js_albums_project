@@ -1,11 +1,12 @@
 # js_albums_project
 
-A project to review API calls
+A project to review API calls.
 You can find the published page [on this link.](https://enginkosure.github.io/js_albums_project/)
 
 ### Summary
 
-AP2 is an API sandbox using JsonPlaceholder. This project is done with vanilla JavaScript. For CSS, Bootstrap Library and SASS preprocessor used.
+AP2 is an API sandbox using JsonPlaceholder. This project is done with vanilla JavaScript.
+For CSS, Bootstrap Library and SASS preprocessor used.
 API calls are made through built-in Fetch API.
 
 ### Getting Started

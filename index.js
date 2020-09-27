@@ -54,20 +54,27 @@ function checkPrevious(id){
     id=='btn' ? lastActiveBtn = id : lastActiveBtn = 'btn1'
 }
 
-let navbar = $(".navbar");
-$(window).scroll(function () {
-  if ($(window).scrollTop() > 10) {
-    navbar.addClass("sticky");
-  } else {
-    navbar.removeClass("sticky");
-  }
-});
+// let navbar = $(".navbar");
+// $(window).scroll(function () {
+//   if ($(window).scrollTop() > 10) {
+//     navbar.addClass("sticky");
+//   } else {
+//     navbar.removeClass("sticky");
+//   }
+// });
 
-// let navbar=document.querySelector('.navbar');
-// window.scroll(function () {
-//     if (window.scrollTop > 10) {
-//       navbar.classList.add("sticky");
-//     } else {
-//       navbar.removeClass("sticky");
-//     }
-//   });
+// When the user scrolls the page, execute makeSticky
+window.onscroll = function() {makeSticky()};
+
+// Get the navbar
+const navbar = document.querySelector(".navbar");
+
+// Get the offset position of the navbar
+const sticky = navbar.offsetTop+10;
+function makeSticky() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
