@@ -276,19 +276,72 @@
 
       <div class="container">
         <div class="row">
+          <!-- <button
+            id="btn"
+            type="button"
+            class="mt-3 mx-auto btn btn-dark btn-custom px-5 py-2"
+          >
+            Get Photos
+          </button> -->
+
           <button
             id="btn"
             type="button"
             class="mt-3 mx-auto btn btn-dark btn-custom px-5 py-2"
           >
             Get Photos
+            <nav aria-label="Page navigation">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a
+                    class="page-link"
+                    id="prev"
+                    href="#btn"
+                    aria-label="Previous"
+                  >
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" id="middle" href="#btn"> 1 - 9 </a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" id="next" href="#btn" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </button>
+
           <button
             id="btn1"
             type="button"
             class="mt-3 mx-auto btn btn-dark btn-custom px-5 py-2"
           >
             Get Albums
+            <nav aria-label="Page navigation">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a
+                    class="page-link"
+                    id="prev1"
+                    href="#btn"
+                    aria-label="Previous"
+                  >
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" id="middle1" href="#btn"> 1 - 9 </a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" id="next1" href="#btn" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </button>
         </div>
         <div class="row justify-content-center" id="cardDiv"></div>
@@ -329,8 +382,9 @@
           <div class="col-md-5 col-sm-5">
             <h4 class="text-light">About us</h4>
             <p class="text-muted">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
-              maxime ea similique illum corrupti
+              Developer capital is the stock of habits, knowledge, social and
+              personality attributes embodied in the ability to perform coding
+              so as to deliver business solutions...
             </p>
             <p class="pt-4 text-muted">
               Copyright ©2020 All rights reserved | by

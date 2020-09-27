@@ -1,5 +1,13 @@
 const btn=document.getElementById('btn').addEventListener('click',getPhotos);
 const btn1=document.getElementById('btn1').addEventListener('click',getAlbums);
+const prev=document.getElementById('prev').addEventListener('click',getPhotos);
+const middle=document.getElementById('middle').addEventListener('click',getPhotos);
+const next=document.getElementById('next').addEventListener('click',getPhotos);
+const prev1=document.getElementById('prev1').addEventListener('click',getAlbums);
+const middle1=document.getElementById('middle1').addEventListener('click',getAlbums);
+const next1=document.getElementById('next1').addEventListener('click',getAlbums);
+
+
 let lastActiveBtn;
 let count=0;
 let clickCountDiv=0;
@@ -9,17 +17,7 @@ const div1=document.getElementById('cardDiv1');
 
 
 function getPhotos(e){
-    // checkPrevious(e.target.id)
-    clickCountDiv+=1;
-    if(clickCountDiv<=1){
-        div.style.minHeight='1200px';
-        div1.style.minHeight='0';
-        div1.innerHTML='';
-        div.innerHTML='';
-        count=0;
-        clickCountDiv1=0;
-    }
-    console.log(e);
+    resetCounters(e.target.id)
 
     fetch('https://jsonplaceholder.typicode.com/photos')
     .then(res=>res.json())
@@ -41,19 +39,8 @@ function getPhotos(e){
 }
 
 function getAlbums(e){
-    // checkPrevious(e.target.id)
-    clickCountDiv1+=1;
-    if(clickCountDiv1<=1){
-        div1.style.minHeight='1200px';
-        div.style.minHeight='0';
-        div.innerHTML='';
-        div1.innerHTML='';
-        //s
-        count=0;
-        clickCountDiv=0;
-    }
-    // div.innerHTML='';
-    // count=0;
+    resetCounters(e.target.id)
+
     fetch('https://jsonplaceholder.typicode.com/albums')
     .then(res=>res.json())
     .then(post=>{
@@ -76,15 +63,8 @@ function getAlbums(e){
 }
 
 function getNthAlbPhotos(e){
-    // checkPrevious('btn')
-    div.style.minHeight='1200px';
-    div1.style.minHeight='0';
-    div1.innerHTML='';
-    div.innerHTML='';
-    //s
-    clickCountDiv1=0;
-    clickCountDiv=0;
-    count=0;
+    resetCounters(e.target)
+
     fetch(`https://jsonplaceholder.typicode.com/photos?albumId=${e.target.innerText}`)
     .then(res=>res.json())
     .then(post=>{
@@ -105,15 +85,42 @@ function getNthAlbPhotos(e){
 }
 
 
-// getAlbums().then(getNthAlbPhotos())
+// function checkPrevious(id){
+//     if(div.innerHTML!=='' && lastActiveBtn!==id){
+//         div.style.minHeight='1200px';
+//         div.innerHTML='';
+//         count=0;
+//     }
+//     id=='btn' ? lastActiveBtn = id : lastActiveBtn = 'btn1'
+// }
 
-function checkPrevious(id){
-    if(div.innerHTML!=='' && lastActiveBtn!==id){
+function resetCounters(id){
+    div1.innerHTML='';
+    div.innerHTML='';
+
+    if( id=='btn'){
+        clickCountDiv+=1;
+        if(clickCountDiv<=1){
+            div.style.minHeight='1200px';
+            div1.style.minHeight='0';
+            clickCountDiv1=0;
+            count=0;
+        }
+    }else if (id=='btn1'){
+        clickCountDiv1+=1;
+        if(clickCountDiv1<=1){
+            div1.style.minHeight='1200px';
+            div.style.minHeight='0';
+            clickCountDiv=0;
+            count=0;
+        }
+    }else{
         div.style.minHeight='1200px';
-        div.innerHTML='';
+        div1.style.minHeight='0';
+        clickCountDiv1=0;
+        clickCountDiv=0;
         count=0;
     }
-    id=='btn' ? lastActiveBtn = id : lastActiveBtn = 'btn1'
 }
 
 // let navbar = $(".navbar");
