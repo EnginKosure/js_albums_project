@@ -83,6 +83,15 @@
       padding-top: 30px;
     }
   }
+  .returnValue {
+    text-decoration: none;
+    h5 {
+      &:hover {
+        background-color: #5d556a;
+        color: aliceblue !important;
+      }
+    }
+  }
   .apg-custom {
     font-weight: bold;
     border-radius: 0.2rem;

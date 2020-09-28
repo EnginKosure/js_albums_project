@@ -1,5 +1,4 @@
-// const btn=document.getElementById('btn').addEventListener('click',getPhotos);
-// const btn1=document.getElementById('btn1').addEventListener('click',getAlbums);
+//Get elements, add events for pagination buttons
 document.getElementById('prev').addEventListener('click',getPhotos);
 const middle=document.getElementById('middle');
 middle.addEventListener('click', getPhotos)
@@ -8,23 +7,20 @@ const prev1=document.getElementById('prev1').addEventListener('click',getAlbums)
 const middle1=document.getElementById('middle1');
 middle1.addEventListener('click',getAlbums);
 const next1=document.getElementById('next1').addEventListener('click',getAlbums);
-let pgnCount=1;
-let pgnCount1=1;
 
-
-let lastActiveBtn;
-let count=0;
-let clickCountDiv=0;
-let clickCountDiv1=0;
+//divs for showing the resolved response
 const div=document.getElementById('cardDiv');
 const div1=document.getElementById('cardDiv1');
+
+//counters
+let pgnCount=1;
+let pgnCount1=1;
 
 //Get photos data from API
 async function getPhotoData(){
     const photoStream=await fetch(`https://jsonplaceholder.typicode.com/photos/?_page=${pgnCount}`);
     const photos=await photoStream.json();
     photos.forEach(photo=>{
-        console.log(photo);
             div.innerHTML+=`
             <div class='card col-lg-3 col-md-4 col-sm-6 mx-1 d-flex shadow card-img-top m-2'>
                 <img class='rounded-circle w-150 p-2' src='${photo.thumbnailUrl}'>
@@ -38,7 +34,7 @@ async function getPhotoData(){
 }
 function getPhotos(e){
     e.preventDefault();
-    resetCounters(e.target.id)
+    resetDiv(e.target.id)
     if (e.target.id=='prev' && pgnCount>1){
         pgnCount-=1  
     }else if (e.target.id=='next'){
@@ -54,8 +50,7 @@ async function getAlbumData(){
     const albumStream=await fetch(`https://jsonplaceholder.typicode.com/albums?_page=${pgnCount1}`);
     const albums=await albumStream.json();
     albums.forEach(album=>{
-        console.log('2',album.id);
-            div1.innerHTML+=`
+        div1.innerHTML+=`
             <div class='card col-lg-3 col-md-4 col-sm-6 mx-1 d-flex shadow card-img-top m-2'>
                 <div class="card-body text-center">
                     <a href="#btn" class="returnValue">
@@ -72,7 +67,7 @@ async function getAlbumData(){
 }
 function getAlbums(e){
     e.preventDefault();
-    resetCounters(e.target.id)
+    resetDiv(e.target.id)
     if (e.target.id=='prev1' && pgnCount1>1){
         pgnCount1-=1  
     }else if (e.target.id=='next1'){
@@ -84,41 +79,35 @@ function getAlbums(e){
     getAlbumData();
 }
 
-function getNthAlbPhotos(e){
+async function getNthAlbPhotos(e){
     e.preventDefault()
-    resetCounters(e.target)
-
-    fetch(`https://jsonplaceholder.typicode.com/photos?albumId=${e.target.innerText}`)
-    .then(res=>res.json())
-    .then(post=>{
-        for(let i=0;i<50;i++){
-            div.innerHTML+=`
-                <div class='card col-lg-3 col-md-4 col-sm-6 mx-1 d-flex shadow card-img-top m-2'>
-                    <img class='rounded-circle w-150 p-2' src='${post[count].thumbnailUrl}'>
-                    <div class="card-body text-center">
-                        <h5 class="card-title title text-muted">${post[count].id}</h5>
-                        <p class="card-text subtext">${post[count].title}</p>
-                    </div>
+    resetDiv(e.target)
+    const selectedPStream=await fetch(`https://jsonplaceholder.typicode.com/photos?albumId=${e.target.innerText}`);
+    const selectedPhotos=await selectedPStream.json();
+    selectedPhotos.forEach(photo=>{
+        div.innerHTML+=`
+            <div class='card col-lg-3 col-md-4 col-sm-6 mx-1 d-flex shadow card-img-top m-2'>
+                <img class='rounded-circle w-150 p-2' src='${photo.thumbnailUrl}'>
+                <div class="card-body text-center">
+                    <h5 class="card-title title text-muted">${photo.id}</h5>
+                    <p class="card-text subtext">${photo.title}</p>
                 </div>
-            `
-            count+=1
-        }
+            </div>
+        `
     })
-    .catch(error=>console.log(error))
 }
 
-function resetCounters(id){
-    const checkArr=['next','prev','middle']
+function resetDiv(id){
     const checkArr1=['next1','prev1','middle1']
     div1.innerHTML='';
     div.innerHTML='';
 
-    if( checkArr.includes(id)){
-        div.style.minHeight='1200px';
-        div1.style.minHeight='0';
-    }else if (checkArr1.includes(id)){
+   if (checkArr1.includes(id)){
         div1.style.minHeight='1200px';
         div.style.minHeight='0';
+    }else{
+        div.style.minHeight='1200px';
+        div1.style.minHeight='0';
     }
 }
 

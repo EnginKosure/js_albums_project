@@ -172,6 +172,13 @@ header .container .col-md-7 p {
 .section-2 .apiCallDemo iframe {
   padding-top: 30px;
 }
+.section-2 .returnValue {
+  text-decoration: none;
+}
+.section-2 .returnValue h5:hover {
+  background-color: #5d556a;
+  color: aliceblue !important;
+}
 .section-2 .apg-custom {
   font-weight: bold;
   border-radius: 0.2rem;
