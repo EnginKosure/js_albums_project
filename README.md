@@ -22,13 +22,16 @@ You can show and hide this section by means of clicking on **API SandBox ~ Try i
 
 #### Get Photos Get Albums
 
-Here, if you click to Get Photos button, you will see first 9 photos fetched from the JsonPlaceholder API. If you click once more, you will get the next 9 photos.
+Here, if you click to Get Photos button, you will see first 10 photos fetched from the JsonPlaceholder API.
+If you click once more, you will get the next 10 photos.
 
-Later, if you click to Get Albums button, you will see the first 9 albums within the same div.
+Later, if you click to Get Albums button, you will see the first 10 albums within the same area.
+
+If you click any album number, you will get the photos _(50 photos per album)_ belonging to that albumId.
 
 ### TODOs
 
 - Implement the whole logic also with React and Flask or Django.
-- Another call to return the photos of selected album.
+- ~~Another call to return the photos of selected album.~~ Done.
+- ~~Add pagination.~~ Done.
 - Add a Helper file to show other call examples in the embedded terminal.
-- Add Tooltip for buttons that explains the functionality.
