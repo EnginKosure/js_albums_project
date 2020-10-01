@@ -34,4 +34,4 @@ If you click any album number, you will get the photos _(50 photos per album)_ b
 - ~~Implement the whole logic also with React or Flask/Django.~~ Done.
 - ~~Another call to return the photos of selected album.~~ Done.
 - ~~Add pagination.~~ Done.
-- Add a Helper file to show other call examples in the embedded terminal.
+- ~~Add a Helper file to show other call examples in the embedded terminal.~~ Done.
