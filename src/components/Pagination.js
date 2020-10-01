@@ -11,7 +11,7 @@ const Pagination=({getPageNumber})=>{
           <section className="section-2 container-fluid p-0">
             <div className="container">
               <div className="row">
-                <button
+                {/* <button
                   id="btn"
                   type="button"
                   className="mt-3 mx-auto btn btn-dark btn-custom px-5 py-1"
@@ -38,7 +38,7 @@ const Pagination=({getPageNumber})=>{
                       </li>
                     </ul>
                   </nav>
-                </button>
+                </button> */}
                 <button
                   id="btn1"
                   type="button"
