@@ -70,7 +70,7 @@ function getAlbums(e){
     resetDiv(e.target.id)
     if (e.target.id=='prev1' && pgnCount1>1){
         pgnCount1-=1  
-    }else if (e.target.id=='next1'){
+    }else if (e.target.id=='next1' && pgnCount1<10){
         pgnCount1+=1
     }else{
         pgnCount1=1 
