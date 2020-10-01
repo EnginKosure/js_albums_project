@@ -1,37 +1,25 @@
-# js_albums_project
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-A project to review API calls.
-You can find the published page [on this link.](https://enginkosure.github.io/js_albums_project/)
+## Available Scripts
 
-### Summary
+In the project directory, you can run:
 
-AP2 is an API sandbox using JsonPlaceholder. This project is done with vanilla JavaScript.
-For CSS, Bootstrap Library and SASS preprocessor used.
-API calls are made through built-in Fetch API.
+### `yarn start`
 
-### Getting Started
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Most parts of the page are made for fun (header, footer, navbar etc.).
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-The main part is _API Sandbox_ part and _Get Photos Get Albums_ section.
+### `yarn test`
 
-#### API Sandbox
+Launches the test runner in the interactive watch mode.
 
-This part has an embedded code editor to try the API calls. There are already two calls made. If you run it, you can see the result on the right section.
-You can show and hide this section by means of clicking on **API SandBox ~ Try it ~ Show/Hide** button.
+### `yarn build`
 
-#### Get Photos Get Albums
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Here, if you click to Get Photos button, you will see first 10 photos fetched from the JsonPlaceholder API.
-If you click once more, you will get the next 10 photos.
-
-Later, if you click to Get Albums button, you will see the first 10 albums within the same area.
-
-If you click any album number, you will get the photos _(50 photos per album)_ belonging to that albumId.
-
-### TODOs
-
-- Implement the whole logic also with React and Flask or Django.
-- ~~Another call to return the photos of selected album.~~ Done.
-- ~~Add pagination.~~ Done.
-- Add a Helper file to show other call examples in the embedded terminal.
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!

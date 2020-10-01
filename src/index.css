@@ -30,33 +30,33 @@
   --light-gray: rgba(255, 255, 255, 0.877);
 }
 
-header {
+.header {
   /* background: #ff512f; */
   /* fallback for old browsers */
   background: var(--bggradient-two);
   /* border: 1px solid black */
 }
-header a {
+.header a {
   font-family: var(--Sniglet-font);
   font-size: 0.9em;
   color: whitesmoke;
 }
-header .nav-item {
+.header .nav-item {
   padding: 0.9em;
 }
-header .nav-item:last-child {
+.header .nav-item:last-child {
   padding-right: 10em;
 }
-header .nav-item .nav-link.active {
+.header .nav-item .nav-link.active {
   font-weight: bold;
   font-size: 18px;
   line-height: 23px;
   color: #ef3b53 !important;
 }
-header .navbar-brand {
+.header .navbar-brand {
   padding-left: 2rem;
 }
-header .sticky {
+.header .sticky {
   position: fixed;
   top: 0;
   width: 100%;
@@ -64,30 +64,30 @@ header .sticky {
   z-index: 9999;
   transition: all 1.5s ease;
 }
-header .row .col-md-5 {
+.header .row .col-md-5 {
   padding: 0.2rem;
 }
-header .row .col-md-5 img {
+.header .row .col-md-5 img {
   margin-top: 10%;
   width: 80%;
   transform: rotate(-20deg);
   border-radius: 10px;
 }
-header .row .col-md-7 {
+.header .row .col-md-7 {
   padding: 5rem 0.2rem;
   font-family: "Rubik", sans-serif;
   /* border: 1px solid black */
 }
-header .container .col-md-7 h6 {
+.header .container .col-md-7 h6 {
   padding: 0.2rem;
   letter-spacing: 4px;
 }
-header .container .col-md-7 h1 {
+.header .container .col-md-7 h1 {
   font-size: 4rem;
   font-weight: bold;
   padding: 0.2rem;
 }
-header .container .col-md-7 p {
+.header .container .col-md-7 p {
   padding: 0.2rem;
 }
 
@@ -199,27 +199,30 @@ header .container .col-md-7 p {
   color: #55083e;
 }
 
-footer {
+.footer {
   background: rgba(0, 0, 0, 0.815);
   padding: 5rem;
   margin-top: 5rem;
 }
-footer p span {
+.footer p span {
   color: #ff512f;
 }
-footer input {
+.footer input {
   border: none !important;
 }
-footer input::placeholder {
+.footer input::placeholder {
   color: white !important;
 }
-footer .input-group .input-group-text {
+.footer .input-group .input-group-text {
   background: var(--bggradient);
   border: none;
 }
-footer .column i {
+.footer .column i {
   color: #dd2476;
   padding: 0.3rem;
 }
 
+#navbarNav > ul > li.nav-item.dropdown > div > a {
+  color: #072e36 !important;
+}
 /*# sourceMappingURL=style.css.map */
